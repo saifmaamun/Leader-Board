@@ -1,5 +1,6 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* common */
 body{
@@ -8,13 +9,21 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     background: #FFFFFF;
     width: 870px;
+    height: 679px;
     padding: 30px;
+    border-radius: 5px;
 }
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
 
 /* top player style  */
 .top-players{
@@ -42,14 +51,12 @@ main{
     margin-left: 16px;
     font-size: 18px;
 }
-hr{
-    border: 1px solid #D1D1D1;
-}
 
 /* top blogs */
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
 }
 .blog{
     display: flex;
@@ -71,6 +78,68 @@ hr{
     color: #886b6b;
 }
 .blog-author a{
+    font-size: 16px;
     text-decoration: none;
     color: #562EFF;
+}
+
+/* course style  */
+.container.bottom{
+    margin-top: 21px;
+    background: #FFFFFF;
+    width: 870px;
+    height: 362px;
+    padding: 30px;
+    border-radius: 5px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course{
+    width: 252px;
+    height: 270px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.course-details{
+    padding: 0 5px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+    padding: 13px 17px 0px 11px;
+    margin-top: 0;
+}
+.course-title{
+    margin-bottom: 7px;
+    font-family: ;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.course-author{
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+    background: #FFE4E8;
+    border-radius: 14px;
+    color: #FF4A60;
+    font-size: 14px;
 }
